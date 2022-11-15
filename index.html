@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Inherit Ass</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        #container {
+            padding: 30px;
+        }
+        #section1, #section2 {
+            margin-top: 20px;
+        }
+        h1, h3{
+            text-decoration: underline;
+        }
+        #section2 h3{
+            padding-bottom: 20px;
+        }
+        li {
+            line-height: 1.5rem;
+        }
+        #likes {
+            color: yellow;
+        } 
+        .like {
+            color: lightblue;
+        }
+        .hate {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Understanding CSS Inherit & Specificity</h1>
+        <div id="section1">
+            <h3>Likes</h3>
+            <ol id="likes">
+                <li class="like">I love God</li>
+                <li class="like">Listening to music</li>
+                <li class="like">Chating with goal oriented people(basically people full of wisdom)</li>
+                <li class="like">Playing games</li>
+                <li class="like">Reading novels</li>
+            </ul>
+        </div>
+        <div id="section2">
+            <h3>Dislikes</h3>
+            <ul id="hates">
+                <li class="hate">Lies</li>
+                <li class="hate">Public speaking</li>
+                <li class="hate">Not meeting dead-lines</li>
+                <li class="hate">Not being polite</li>
+                <li class="hate">Negative oriented people</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
